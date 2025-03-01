@@ -1,6 +1,6 @@
 # 📱 Gestión de Productos - React Native Expo
 
-Este proyecto es la versión móvil de la aplicación de gestión de productos, desarrollada con **React Native**, **Expo**, **TypeScript**, **Redux Toolkit**, y **React Navigation**. Permite listar, agregar, editar y eliminar productos, así como gestionar un carrito de compras desde una aplicación móvil.
+Este proyecto es la versión móvil de la aplicación de gestión de productos, desarrollada con **React Native**, **Expo** y **TypeScript**. Permite listar, agregar y eliminar productos de una base de datos MySQL.
 
 ## 📋 Requisitos Previos
 - **Ejecutar el backend que puedes encontrar en:** [igloolab-prueba-tecnica-backend](https://github.com/JohanLeon0914/igloolab-prueba-tecnica-backend)
@@ -37,11 +37,11 @@ Esto abrirá el servidor de Expo, donde puedes escanear el código QR con la app
 ## 📱 Ejecutar en dispositivos/emuladores
 - **Android:**
   ```bash
-  npx expo run:android
+  npm run android
   ```
 - **iOS (requiere macOS y Xcode):**
   ```bash
-  npx expo run:ios
+  npm run ios
   ```
 
 ## 🛠 Tecnologías Utilizadas
