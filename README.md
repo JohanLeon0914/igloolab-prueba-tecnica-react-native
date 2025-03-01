@@ -1,50 +1,59 @@
-# Welcome to your Expo app 👋
+# 📱 Gestión de Productos - React Native Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este proyecto es la versión móvil de la aplicación de gestión de productos, desarrollada con **React Native**, **Expo**, **TypeScript**, **Redux Toolkit**, y **React Navigation**. Permite listar, agregar, editar y eliminar productos, así como gestionar un carrito de compras desde una aplicación móvil.
 
-## Get started
+## 📋 Requisitos Previos
+- **Ejecutar el backend que puedes encontrar en:** [igloolab-prueba-tecnica-backend](https://github.com/JohanLeon0914/igloolab-prueba-tecnica-backend)
+- **Ngrok u otro medio para exponer el puerto 3001 del backend**
+- **Node.js** (v16+)
+- **npm** (v8+)
+- **Expo CLI** (v6+)
 
-1. Install dependencies
+## 🚀 Instalación y Configuración
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### 1. Clonar el repositorio
 ```bash
-npm run reset-project
+git clone https://github.com/JohanLeon0914/igloolab-prueba-tecnica-react-native
+cd igloolab-prueba-tecnica-react-native
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Instalar dependencias
+```bash
+npm install
+```
 
-## Learn more
+### 3. Configurar URL de la API
+Entra a app/const/api_url.ts y cambia la url por la de la API ejecutándose en un ngrok u otro medio para exponer el puerto 3001 (el puerto del backend) de manera publica:
+```bash
+API_URL='url_puerto_3001_ngrok'
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4. Ejecutar la aplicación en modo desarrollo
+```bash
+npx expo start
+```
+Esto abrirá el servidor de Expo, donde puedes escanear el código QR con la app de Expo Go en tu dispositivo o ejecutar en un emulador.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📱 Ejecutar en dispositivos/emuladores
+- **Android:**
+  ```bash
+  npx expo run:android
+  ```
+- **iOS (requiere macOS y Xcode):**
+  ```bash
+  npx expo run:ios
+  ```
 
-## Join the community
+## 🛠 Tecnologías Utilizadas
+- **React Native**: Framework para desarrollo móvil.
+- **Expo**: Plataforma para desarrollo y prueba rápida.
+- **TypeScript**: Tipado estático para mayor robustez.
+- **Axios**: Consumo de API REST.
 
-Join our community of developers creating universal apps.
+## 📄 Funcionalidades
+- 🔍 Listado de productos
+- ➕ Agregar nuevos productos
+- 🗑️ Eliminar productos
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📌 Notas
+- Asegúrate de que el backend esté corriendo en `http://localhost:3001` y exponer este puerto de manera publico mediante ngrok o cualquier otro medio y colocar la URL generada en app/const/api_url.ts.
