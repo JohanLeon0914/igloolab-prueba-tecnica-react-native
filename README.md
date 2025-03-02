@@ -56,4 +56,4 @@ Esto abrirá el servidor de Expo, donde puedes escanear el código QR con la app
 - 🗑️ Eliminar productos
 
 ## 📌 Notas
-- Asegúrate de que el backend esté corriendo en `http://localhost:3001` y exponer este puerto de manera publico mediante ngrok o cualquier otro medio y colocar la URL generada en app/const/api_url.ts.
+- Asegúrate de que el backend esté corriendo en `http://localhost:3001` y exponer este puerto de manera publica mediante ngrok o cualquier otro medio y colocar la URL generada en app/const/api_url.ts.
